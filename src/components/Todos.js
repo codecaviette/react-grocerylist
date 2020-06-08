@@ -4,9 +4,10 @@ import PropTypes from 'prop-types';
 
 class Todos extends Component {
     render() {
-        //console.log(this.props.todos1)    //Test to ensure state was passed down from App.js to Todos component
+        //console.log(this.props.todos1)       //Test to ensure state was passed down from App.js to Todos component
+
         return this.props.todos1.map((todo) => (
-        <TodoItem key={todo.id} todo2={todo}/>
+            <TodoItem key={todo.id} todo2={todo} markComplete2={this.props.markComplete1}/>
         ));
     }
 }

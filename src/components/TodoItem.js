@@ -13,10 +13,22 @@ class TodoItem extends React.Component {
         }    
     }
     
+    /*  We cannot update parent state from a grandchild or child; instead, we create a fxn in parent comp and pass down to components as prop to child (Todos) then grandchild (TodoItem)
+    markComplete2 = () => {
+        this.setState... 
+    }
+    */
+
     render() {
+        const {id, title} = this.props.todo2;       // Destructuring so you can use shorter variables in the return statement
         return (
+            // Call getStyle function with () so it's automatically run, whereas with markComplete fxn you only want it to take effect when event happens
             <div style={this.getStyle()}>
-                <p>{this.props.todo2.title}</p>
+                <p>
+                    <input type="checkbox" onChange={this.props.markComplete2.bind(this, id)} />      {/* To access passed down prop (fxn markComplete2) you need prop keyword. Bind keyword allows state to know which item is being marked complete */}
+                    {' '}   
+                    {title}
+                </p>
             </div>
         )
     }
