@@ -28,6 +28,7 @@ class TodoItem extends React.Component {
                     <input type="checkbox" onChange={this.props.markComplete2.bind(this, id)} />      {/* To access passed down prop (fxn markComplete2) you need prop keyword. Bind keyword allows state to know which item is being marked complete */}
                     {' '}   
                     {title}
+                    <button onClick={this.props.delTodo2.bind(this, id)} style={btnStyle}> x </button>       {/* Style defined below */}
                 </p>
             </div>
         )
@@ -37,6 +38,17 @@ class TodoItem extends React.Component {
 // PropTypes (this is good practice for any components that are getting passed props)
 TodoItem.propTypes = {
     todo2: PropTypes.object.isRequired
+}
+
+// Used in top-level return
+const btnStyle = {
+    background: '#ff0000',
+    color: '#fff',
+    border: 'none',
+    padding: '6px 10.5px',
+    borderRadius: '50%',
+    cursor: 'pointer',
+    float: 'right'
 }
 
 export default TodoItem
