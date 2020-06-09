@@ -1,8 +1,11 @@
 // This is the parent component that passes state and functions as props to child comp (Todos), then grandchild (TodoITem)
 
 import React, { Component } from 'react';
-import './App.css';
+import Header from './components/layout/Header';
 import Todos from './components/Todos';
+import AddTodo from './components/AddTodo';
+import './App.css';
+
 
 class App extends Component {
   state = {
@@ -49,7 +52,11 @@ class App extends Component {
     //console.log(this.state.todos);   //Test to ensure component is working
     return (
       <div className="App">
-        <Todos todos1={this.state.todos} markComplete1={this.markComplete} delTodo1={this.delTodo}/>
+        <div clasName="container">
+          <Header />
+          <AddTodo />
+          <Todos todos1={this.state.todos} markComplete1={this.markComplete} delTodo1={this.delTodo}/>
+        </div>
       </div>
     );
   }
