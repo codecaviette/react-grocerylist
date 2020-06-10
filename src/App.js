@@ -23,7 +23,7 @@ class App extends Component {
       {
         id: uuidv4(),
         title: 'Dinner with Bingyune', 
-        completed: false
+        completed: true
       },
       {
         id: uuidv4(),
