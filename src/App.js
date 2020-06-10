@@ -1,27 +1,32 @@
 // This is the parent component that passes state and functions as props to child comp (Todos), then grandchild (TodoITem)
 
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Header from './components/layout/Header';
 import Todos from './components/Todos';
 import AddTodo from './components/AddTodo';
+import About from './components/pages/About';
+import { v4 as uuidv4 } from 'uuid';
+
 import './App.css';
 
 
 class App extends Component {
+  // Below is app-level state bc it's shared between components
   state = {
     todos: [
       {
-        id: 1,
+        id: uuidv4(),
         title: 'Take out trash', 
         completed: true
       },
       {
-        id: 2,
+        id: uuidv4(),
         title: 'Dinner with Bingyune', 
         completed: false
       },
       {
-        id: 3,
+        id: uuidv4(),
         title: 'Call with family', 
         completed: false
       }
@@ -44,20 +49,39 @@ class App extends Component {
   delTodo = (id) => {
     this.setState({
       todos: [...this.state.todos.filter(todo =>      // To copy everything that's already there, use the spread operator: ...
-        todo.id !== id)] })
+        todo.id !== id)] });
+  }
+
+  // Add Todo
+  addTodo = (title) => {
+    const newTodo = {
+      id: uuidv4(),              // Generate random id's by installing UUID (in terminal, enter: npm install uuid). This allows us to create unlimited number of todo's without having to specify specific unique id #s
+      title: title,
+      completed: false
+    }
+    this.setState({
+      todos: [...this.state.todos, newTodo]       // Combine arrays (newTodo defined as variable above)
+    })
   }
 
   // Render is the only required lifecycle method for class component:
   render() {
     //console.log(this.state.todos);   //Test to ensure component is working
     return (
-      <div className="App">
-        <div clasName="container">
-          <Header />
-          <AddTodo />
-          <Todos todos1={this.state.todos} markComplete1={this.markComplete} delTodo1={this.delTodo}/>
+      <Router>
+        <div className="App">           {/* Styling defined in App.css */}
+          <div className="container">
+            <Header />
+            <Route exact path="/" render={props => (      // This URL will go display AddTodo and Todos components. Use render so we can pass props thru components
+              <React.Fragment>
+                <AddTodo addTodo1={this.addTodo}/>
+                <Todos todos1={this.state.todos} markComplete1={this.markComplete} delTodo1={this.delTodo}/>
+              </React.Fragment>
+            )} />
+            <Route exact path="/about" component={About} />
+          </div>
         </div>
-      </div>
+      </Router>
     );
   }
 }
