@@ -18,12 +18,12 @@ class App extends Component {
       {
         id: uuidv4(),
         title: 'Take out trash', 
-        completed: true
+        completed: false
       },
       {
         id: uuidv4(),
         title: 'Dinner with Bingyune', 
-        completed: true
+        completed: false
       },
       {
         id: uuidv4(),
