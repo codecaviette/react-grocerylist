@@ -24,7 +24,7 @@ export class AddTodo extends Component {
                 <input                                    // = input element
                     type="text" 
                     name="title"                          // name attribute must match a state property name so that it can be used in onChangeMethod event handler
-                    placeholder="Add To-do..." 
+                    placeholder="Add grocery item..." 
                     style={{flex: '10', padding: '5px'}}
                     value={this.state.title}              // The state object's property is assigned here. As a viewer types into this text field,the value (and state) 
                     onChange={this.onChangeMethod}        // will change; so, we need an event handler (onChangeMethod) to handle what happens when value/state changes
