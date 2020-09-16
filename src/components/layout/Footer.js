@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
-        <header style={headerStyle}> Happy Shopping! </header> 
+        <header style={headerStyle}> Happy shopping! </header> 
     )
 }
 
