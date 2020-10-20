@@ -4,17 +4,23 @@ Please visit the deployed version here: https://jmc-grocery-list.netlify.app/ - 
 
 Home page (minimized):
 <div style="text-align:center">
-  <img width="350" alt="homepage minimized" src="https://github.com/codecaviette/react-grocerylist/blob/master/public/images/homepage_min.png">
+  <kbd>
+    <img width="350" alt="homepage minimized" src="https://github.com/codecaviette/react-grocerylist/blob/master/public/images/homepage_min.png">
+  </kbd>
 </div>
 
 </br>
 Home page (maximized):
 <div style="text-align:center">
-  <img width="750" alt="homepage maximized" src="https://github.com/codecaviette/react-grocerylist/blob/master/public/images/homepage_max.png">
+  <kbd>
+    <img width="750" alt="homepage maximized" src="https://github.com/codecaviette/react-grocerylist/blob/master/public/images/homepage_max.png">
+  </kbd>
 </div>
 
 </br>
 About page:
 <div style="text-align:center">
-  <img width="750" alt="aboutpage" src="https://github.com/codecaviette/react-grocerylist/blob/master/public/images/aboutpage.png">
+  <kbd>
+    <img width="750" alt="aboutpage" src="https://github.com/codecaviette/react-grocerylist/blob/master/public/images/aboutpage.png">
+  </kbd>
 </div>
