@@ -3,7 +3,7 @@ This dynamic React app creates an interactive grocery list through the following
 
 <div style="text-align:center">
   <kbd>
-    <img width="350" alt="Grocery List" src="https://media.giphy.com/media/xCgG3DT7AnPkW7lcTL/giphy.gif">
+    <img width="550" alt="Grocery List" src="https://media.giphy.com/media/xCgG3DT7AnPkW7lcTL/giphy.gif">
   </kbd>
 </div>
 
