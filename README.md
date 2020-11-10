@@ -1,5 +1,6 @@
-This dynamic React app creates an interactive grocery list through the following React functionalities: Passing state, Modifying state from child component, React Router, UUID. Items can added and deleted from list as well as marked as complete. Inspired by Traversy Media's React JS crash course. 
+This responsive React app creates an interactive grocery list through the following React functionalities: Passing state, Modifying state from child component, React Router, UUID. Items can added and deleted from list as well as marked as complete. Inspired by Traversy Media's React JS crash course. 
 
+Demo: 
 
 <div style="text-align:center">
   <kbd>
