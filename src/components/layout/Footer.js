@@ -7,10 +7,10 @@ function Footer() {
 }
 
 const headerStyle = {
-    color: 'teal',
-    fontStyle: 'italic',
+    background: '#51A6A6',
+    color: '#fff',
     textAlign: 'center',
-    padding: '10px'
+    padding: '30px'
 }
 
 
