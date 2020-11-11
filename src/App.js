@@ -40,6 +40,16 @@ class App extends Component {
         id: uuidv4(),
         title: 'Steak', 
         completed: false
+      },
+      {
+        id: uuidv4(),
+        title: 'Pesto sauce', 
+        completed: false
+      },
+      {
+        id: uuidv4(),
+        title: 'Bell peppers', 
+        completed: false
       }
     ],  
   }
