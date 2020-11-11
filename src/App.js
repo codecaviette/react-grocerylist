@@ -18,7 +18,7 @@ class App extends Component {
     todos: [
       {
         id: uuidv4(),
-        title: 'A dozen eggs', 
+        title: 'Eggs', 
         completed: false
       },
       {
@@ -29,6 +29,16 @@ class App extends Component {
       {
         id: uuidv4(),
         title: 'Blueberry yogurt', 
+        completed: false
+      },
+      {
+        id: uuidv4(),
+        title: 'Cheddar cheese', 
+        completed: false
+      },
+      {
+        id: uuidv4(),
+        title: 'Steak', 
         completed: false
       }
     ],  

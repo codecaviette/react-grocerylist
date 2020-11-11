@@ -1,3 +1,24 @@
+
+/* This accounts for extra white space on right side of page*/
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* give everything inherit for box sizing, and set the body to border-box */
+  /* this makes it easier to change box-sizing properties for other things
+  if the situation ever arises */
+  box-sizing: inherit; }
+
 * {
   box-sizing: border-box;
   margin: 0;
