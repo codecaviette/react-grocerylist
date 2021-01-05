@@ -12,7 +12,7 @@ This responsive React app creates an interactive grocery list through the follow
 ## <a name="demo-video"></a>Demo Video
 <div style="text-align:center">
   <kbd>
-    <img width="550" alt="Grocery List" src="https://media.giphy.com/media/xCgG3DT7AnPkW7lcTL/giphy.gif">
+    <img width="550" alt="Grocery List" src="https://media.giphy.com/media/KxElsR9B3fmJBSdvMQ/giphy.gif">
   </kbd>
 </div>
 
